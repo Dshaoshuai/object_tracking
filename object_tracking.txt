@@ -1,0 +1,17 @@
+为了清楚的描述本论文中提到的问题，我们用一个实际的物体追踪的例子来讨论有状态的数据流应用的计算切分问题，
+In order to clearly describe the significance of the problem proposed in this paper, we discuss the stateful data stream applications computation 
+partitioning problem with a realistic object tracking example.
+
+如图所示，有状态的功能模块
+在这个例子中，物体追踪由论文中提到的两个算法实现，分别为STC算法和改进过的STC算法。两者都是基于贝叶斯的计算框架来预测感兴趣的物体和局部的上下文区域之间空间时间相似性，前者只考虑了待追踪物体和周围区域在空间
+位置的关联，而后者还考虑了相关的动作和方向。
+STC算法和改进过的STC算法的功能模块和执行流程分别如图1和图2所示。
+In this example, object tracking is implemented by two algorithms mentioned in the paper, which are STC algorithm and improved STC algorithm respectively. Both of them are Bayesian-based 
+computation frameworks to predict the spatio-temporal relationship between the object of interest and its local context region. However, the STC only considers positional relationship between the pixels 
+in the context region and object while the improved STC also considers relative motion and direction.
+Furthermore, the functional modules and execution flows of the STC algorithm and the improved STC algorithm are shown in Figure 1 and 2, respectively.
+
+如图1所示，模块
+
+
+
